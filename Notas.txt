@@ -1,0 +1,9 @@
+Firebase es una base de datos NOSQL de Google
+
+db.collection('cafes').get  = solicitud asincrona, le toma un tiempo cargar, por lo que
+                                no se puede asignar instantaneamente a una variable
+
+
+db.collection('cafes').get.then( (snapshot) => {
+    
+} ) = el then se ejecuta cuando ya haya cargado completamente
